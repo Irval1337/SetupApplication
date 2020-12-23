@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -8,6 +8,7 @@ using Ionic.Zip;
 using System.Diagnostics;
 using System.Drawing.Text;
 using NotificationManager;
+using System.ComponentModel;
 
 namespace Setup
 {
@@ -130,14 +131,10 @@ namespace Setup
         {
             try
             {
-                string link = @"https://www.dropbox.com/s/bzfn719n7g5wpjg/datastock.zip?dl=1";
-
-                using (WebClient webClient = new WebClient())
-                {
-
-                    Directory.CreateDirectory(path + @"\DataStock BOT");
-                    webClient.DownloadFile(new Uri(link), path + @"\DataStock BOT\datastock.zip");
-
+                string link = @"Ваша ссылка на архив с программой";
+                Directory.CreateDirectory(path + @"\DataStock BOT");
+                WebClient webClient = new WebClient();
+                webClient.DownloadFileCompleted += ((object se, AsyncCompletedEventArgs ev) => {
                     using (Ionic.Zip.ZipFile zip = Ionic.Zip.ZipFile.Read(path + @"\DataStock BOT\datastock.zip"))
                     {
                         foreach (ZipEntry evu in zip)
@@ -174,7 +171,9 @@ namespace Setup
 
                     tabControl1.SelectedIndex++;
                     pictureBox3.Location = new Point(pictureBox3.Location.X, pictureBox3.Location.Y + 40);
-                }
+                });
+                webClient.DownloadFileAsync(new Uri(link), path + @"\DataStock BOT\datastock.zip");
+                manager.Alert("Установка начата", NotificationType.Success);
             }
             catch { manager.Alert("Ошибка во время установки", NotificationType.Error); }          
         }
