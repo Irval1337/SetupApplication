@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties49 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties50 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties51 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties52 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties53 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties54 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties55 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -100,6 +100,11 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -112,6 +117,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -124,6 +130,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 58);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // bunifuImageButton2
@@ -224,7 +231,7 @@
             // 
             // label24
             // 
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Location = new System.Drawing.Point(37, 235);
             this.label24.Name = "label24";
@@ -234,7 +241,7 @@
             // 
             // label23
             // 
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(37, 200);
             this.label23.Name = "label23";
@@ -244,7 +251,7 @@
             // 
             // label22
             // 
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label22.ForeColor = System.Drawing.Color.White;
             this.label22.Location = new System.Drawing.Point(37, 150);
             this.label22.Name = "label22";
@@ -254,7 +261,7 @@
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(37, 100);
             this.label21.Name = "label21";
@@ -264,7 +271,7 @@
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(37, 49);
             this.label20.Name = "label20";
@@ -280,11 +287,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(27, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 18);
+            this.label1.Size = new System.Drawing.Size(174, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выбор папки установки";
             // 
@@ -296,6 +303,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(162, 51);
             this.tabControl1.Multiline = true;
@@ -313,7 +321,7 @@
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(637, 339);
+            this.tabPage1.Size = new System.Drawing.Size(637, 349);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -326,7 +334,7 @@
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton4.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton4.ForeColor = System.Drawing.Color.White;
             this.bunifuButton4.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton4.IconPadding = 10;
@@ -339,13 +347,13 @@
             this.bunifuButton4.IdleIconRightImage = null;
             this.bunifuButton4.Location = new System.Drawing.Point(206, 309);
             this.bunifuButton4.Name = "bunifuButton4";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
-            stateProperties1.BorderRadius = 35;
-            stateProperties1.BorderThickness = 0;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.bunifuButton4.onHoverState = stateProperties1;
+            stateProperties45.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
+            stateProperties45.BorderRadius = 35;
+            stateProperties45.BorderThickness = 0;
+            stateProperties45.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(43)))), ((int)(((byte)(35)))));
+            stateProperties45.IconLeftImage = null;
+            stateProperties45.IconRightImage = null;
+            this.bunifuButton4.onHoverState = stateProperties45;
             this.bunifuButton4.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton4.TabIndex = 4;
             this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -360,7 +368,7 @@
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton3.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton3.ForeColor = System.Drawing.Color.White;
             this.bunifuButton3.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton3.IconPadding = 10;
@@ -373,13 +381,13 @@
             this.bunifuButton3.IdleIconRightImage = null;
             this.bunifuButton3.Location = new System.Drawing.Point(317, 309);
             this.bunifuButton3.Name = "bunifuButton3";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties2.BorderRadius = 35;
-            stateProperties2.BorderThickness = 0;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.bunifuButton3.onHoverState = stateProperties2;
+            stateProperties46.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties46.BorderRadius = 35;
+            stateProperties46.BorderThickness = 0;
+            stateProperties46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties46.IconLeftImage = null;
+            stateProperties46.IconRightImage = null;
+            this.bunifuButton3.onHoverState = stateProperties46;
             this.bunifuButton3.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton3.TabIndex = 4;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -387,7 +395,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(27, 76);
             this.label7.Name = "label7";
@@ -398,11 +406,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(27, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(396, 18);
+            this.label6.Size = new System.Drawing.Size(370, 18);
             this.label6.TabIndex = 1;
             this.label6.Text = "Вас приветствует Мастер установки DataStock BOT";
             // 
@@ -418,7 +426,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(637, 339);
+            this.tabPage2.Size = new System.Drawing.Size(637, 349);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
@@ -431,7 +439,7 @@
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton6.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton6.ForeColor = System.Drawing.Color.White;
             this.bunifuButton6.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton6.IconPadding = 10;
@@ -444,13 +452,13 @@
             this.bunifuButton6.IdleIconRightImage = null;
             this.bunifuButton6.Location = new System.Drawing.Point(242, 309);
             this.bunifuButton6.Name = "bunifuButton6";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties3.BorderRadius = 35;
-            stateProperties3.BorderThickness = 0;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.bunifuButton6.onHoverState = stateProperties3;
+            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties47.BorderRadius = 35;
+            stateProperties47.BorderThickness = 0;
+            stateProperties47.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties47.IconLeftImage = null;
+            stateProperties47.IconRightImage = null;
+            this.bunifuButton6.onHoverState = stateProperties47;
             this.bunifuButton6.Size = new System.Drawing.Size(145, 35);
             this.bunifuButton6.TabIndex = 5;
             this.bunifuButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -459,7 +467,7 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.ForeColor = System.Drawing.Color.White;
             this.richTextBox1.Location = new System.Drawing.Point(30, 129);
             this.richTextBox1.Name = "richTextBox1";
@@ -471,29 +479,29 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(27, 279);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(479, 30);
+            this.label11.Size = new System.Drawing.Size(462, 30);
             this.label11.TabIndex = 3;
-            this.label11.Text = "Нажав \"Согласен(на))\", вы подтверждаете, что прочли и согласны с условиями\r\nЛицен" +
-    "зионного соглашения.";
+            this.label11.Text = "Нажав \"Согласен(на)\", вы подтверждаете, что прочли и согласны с условиями\r\nЛиценз" +
+    "ионного соглашения.";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(27, 101);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(456, 15);
+            this.label10.Size = new System.Drawing.Size(440, 15);
             this.label10.TabIndex = 3;
             this.label10.Text = "Для перемещения по тексту используйте клавиши \"PageUp\" и \"Pagedown\".";
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(50, 52);
             this.label9.Name = "label9";
@@ -505,11 +513,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(27, 24);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(219, 18);
+            this.label8.Size = new System.Drawing.Size(196, 18);
             this.label8.TabIndex = 1;
             this.label8.Text = "Лицензионное соглашение";
             // 
@@ -529,7 +537,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(637, 339);
+            this.tabPage3.Size = new System.Drawing.Size(637, 349);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "tabPage3";
             // 
@@ -542,7 +550,7 @@
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton5.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton5.ForeColor = System.Drawing.Color.White;
             this.bunifuButton5.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton5.IconPadding = 10;
@@ -555,13 +563,13 @@
             this.bunifuButton5.IdleIconRightImage = null;
             this.bunifuButton5.Location = new System.Drawing.Point(206, 309);
             this.bunifuButton5.Name = "bunifuButton5";
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties4.BorderRadius = 35;
-            stateProperties4.BorderThickness = 0;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.bunifuButton5.onHoverState = stateProperties4;
+            stateProperties48.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties48.BorderRadius = 35;
+            stateProperties48.BorderThickness = 0;
+            stateProperties48.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties48.IconLeftImage = null;
+            stateProperties48.IconRightImage = null;
+            this.bunifuButton5.onHoverState = stateProperties48;
             this.bunifuButton5.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton5.TabIndex = 3;
             this.bunifuButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -576,7 +584,7 @@
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton2.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton2.ForeColor = System.Drawing.Color.White;
             this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton2.IconPadding = 10;
@@ -589,13 +597,13 @@
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.Location = new System.Drawing.Point(317, 309);
             this.bunifuButton2.Name = "bunifuButton2";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties5.BorderRadius = 35;
-            stateProperties5.BorderThickness = 0;
-            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties5.IconLeftImage = null;
-            stateProperties5.IconRightImage = null;
-            this.bunifuButton2.onHoverState = stateProperties5;
+            stateProperties49.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties49.BorderRadius = 35;
+            stateProperties49.BorderThickness = 0;
+            stateProperties49.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties49.IconLeftImage = null;
+            stateProperties49.IconRightImage = null;
+            this.bunifuButton2.onHoverState = stateProperties49;
             this.bunifuButton2.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton2.TabIndex = 3;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -610,7 +618,7 @@
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton1.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton1.ForeColor = System.Drawing.Color.White;
             this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton1.IconPadding = 10;
@@ -623,13 +631,13 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.Location = new System.Drawing.Point(504, 201);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(199)))), ((int)(((byte)(114)))));
-            stateProperties6.BorderRadius = 5;
-            stateProperties6.BorderThickness = 0;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(199)))), ((int)(((byte)(114)))));
-            stateProperties6.IconLeftImage = null;
-            stateProperties6.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties6;
+            stateProperties50.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(199)))), ((int)(((byte)(114)))));
+            stateProperties50.BorderRadius = 5;
+            stateProperties50.BorderThickness = 0;
+            stateProperties50.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(199)))), ((int)(((byte)(114)))));
+            stateProperties50.IconLeftImage = null;
+            stateProperties50.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties50;
             this.bunifuButton1.Size = new System.Drawing.Size(88, 35);
             this.bunifuButton1.TabIndex = 3;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -650,7 +658,7 @@
             this.bunifuTextBox1.BorderRadius = 5;
             this.bunifuTextBox1.BorderThickness = 1;
             this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuTextBox1.DefaultText = "";
             this.bunifuTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
             this.bunifuTextBox1.ForeColor = System.Drawing.Color.White;
@@ -691,7 +699,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(27, 141);
             this.label4.Name = "label4";
@@ -703,33 +711,33 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(66, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(393, 16);
+            this.label3.Size = new System.Drawing.Size(383, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Программа установит Datastock ВОТ в следующую папку.";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(27, 241);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(436, 15);
+            this.label5.Size = new System.Drawing.Size(413, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Требуется как минимум 18,2 Мб свободного дискового пространства.";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(50, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(317, 15);
+            this.label2.Size = new System.Drawing.Size(312, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "В какую папку вы хотите установить DataStock BOT?";
             // 
@@ -748,7 +756,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(637, 339);
+            this.tabPage4.Size = new System.Drawing.Size(637, 349);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             // 
@@ -761,7 +769,7 @@
             this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton7.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton7.ForeColor = System.Drawing.Color.White;
             this.bunifuButton7.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton7.IconPadding = 10;
@@ -774,13 +782,13 @@
             this.bunifuButton7.IdleIconRightImage = null;
             this.bunifuButton7.Location = new System.Drawing.Point(206, 309);
             this.bunifuButton7.Name = "bunifuButton7";
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties7.BorderRadius = 35;
-            stateProperties7.BorderThickness = 0;
-            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties7.IconLeftImage = null;
-            stateProperties7.IconRightImage = null;
-            this.bunifuButton7.onHoverState = stateProperties7;
+            stateProperties51.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties51.BorderRadius = 35;
+            stateProperties51.BorderThickness = 0;
+            stateProperties51.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties51.IconLeftImage = null;
+            stateProperties51.IconRightImage = null;
+            this.bunifuButton7.onHoverState = stateProperties51;
             this.bunifuButton7.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton7.TabIndex = 5;
             this.bunifuButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -795,7 +803,7 @@
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton8.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton8.ForeColor = System.Drawing.Color.White;
             this.bunifuButton8.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton8.IconPadding = 10;
@@ -808,13 +816,13 @@
             this.bunifuButton8.IdleIconRightImage = null;
             this.bunifuButton8.Location = new System.Drawing.Point(317, 309);
             this.bunifuButton8.Name = "bunifuButton8";
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties8.BorderRadius = 35;
-            stateProperties8.BorderThickness = 0;
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties8.IconLeftImage = null;
-            stateProperties8.IconRightImage = null;
-            this.bunifuButton8.onHoverState = stateProperties8;
+            stateProperties52.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties52.BorderRadius = 35;
+            stateProperties52.BorderThickness = 0;
+            stateProperties52.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties52.IconLeftImage = null;
+            stateProperties52.IconRightImage = null;
+            this.bunifuButton8.onHoverState = stateProperties52;
             this.bunifuButton8.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton8.TabIndex = 6;
             this.bunifuButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -928,7 +936,7 @@
             // 
             // label14
             // 
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(27, 90);
             this.label14.Name = "label14";
@@ -940,44 +948,44 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(53, 173);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(391, 16);
+            this.label16.Size = new System.Drawing.Size(373, 16);
             this.label16.TabIndex = 1;
             this.label16.Text = "Открыть официальную тему программы на DataStock.biz";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(50, 52);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(339, 15);
+            this.label13.Size = new System.Drawing.Size(337, 15);
             this.label13.TabIndex = 2;
             this.label13.Text = "Какие дополнительные задачи необходимо выполнить?";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(53, 143);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(231, 16);
+            this.label15.Size = new System.Drawing.Size(224, 16);
             this.label15.TabIndex = 1;
             this.label15.Text = "Создать ярлык на рабочем столе";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(27, 24);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(265, 18);
+            this.label12.Size = new System.Drawing.Size(253, 18);
             this.label12.TabIndex = 1;
             this.label12.Text = "Выберите дополнительные задачи";
             // 
@@ -993,7 +1001,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(637, 339);
+            this.tabPage5.Size = new System.Drawing.Size(637, 349);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             // 
@@ -1006,7 +1014,7 @@
             this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton9.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton9.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton9.ForeColor = System.Drawing.Color.White;
             this.bunifuButton9.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton9.IconPadding = 10;
@@ -1019,13 +1027,13 @@
             this.bunifuButton9.IdleIconRightImage = null;
             this.bunifuButton9.Location = new System.Drawing.Point(206, 309);
             this.bunifuButton9.Name = "bunifuButton9";
-            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties9.BorderRadius = 35;
-            stateProperties9.BorderThickness = 0;
-            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties9.IconLeftImage = null;
-            stateProperties9.IconRightImage = null;
-            this.bunifuButton9.onHoverState = stateProperties9;
+            stateProperties53.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties53.BorderRadius = 35;
+            stateProperties53.BorderThickness = 0;
+            stateProperties53.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties53.IconLeftImage = null;
+            stateProperties53.IconRightImage = null;
+            this.bunifuButton9.onHoverState = stateProperties53;
             this.bunifuButton9.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton9.TabIndex = 7;
             this.bunifuButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1040,7 +1048,7 @@
             this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton10.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton10.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton10.ForeColor = System.Drawing.Color.White;
             this.bunifuButton10.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton10.IconPadding = 10;
@@ -1053,13 +1061,13 @@
             this.bunifuButton10.IdleIconRightImage = null;
             this.bunifuButton10.Location = new System.Drawing.Point(317, 309);
             this.bunifuButton10.Name = "bunifuButton10";
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties10.BorderRadius = 35;
-            stateProperties10.BorderThickness = 0;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties10.IconLeftImage = null;
-            stateProperties10.IconRightImage = null;
-            this.bunifuButton10.onHoverState = stateProperties10;
+            stateProperties54.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties54.BorderRadius = 35;
+            stateProperties54.BorderThickness = 0;
+            stateProperties54.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties54.IconLeftImage = null;
+            stateProperties54.IconRightImage = null;
+            this.bunifuButton10.onHoverState = stateProperties54;
             this.bunifuButton10.Size = new System.Drawing.Size(105, 35);
             this.bunifuButton10.TabIndex = 8;
             this.bunifuButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1068,7 +1076,7 @@
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
-            this.richTextBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.ForeColor = System.Drawing.Color.White;
             this.richTextBox2.Location = new System.Drawing.Point(30, 133);
             this.richTextBox2.Name = "richTextBox2";
@@ -1080,7 +1088,7 @@
             // 
             // label19
             // 
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(27, 90);
             this.label19.Name = "label19";
@@ -1092,22 +1100,22 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(50, 52);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(504, 15);
+            this.label18.Size = new System.Drawing.Size(484, 15);
             this.label18.TabIndex = 3;
-            this.label18.Text = "Программа установки готова начать установку Datastock ВОТ на ваш компьютер.";
+            this.label18.Text = "Программа установки готова начать установку DataStock ВОТ на ваш компьютер.";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(27, 24);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(183, 18);
+            this.label17.Size = new System.Drawing.Size(173, 18);
             this.label17.TabIndex = 2;
             this.label17.Text = "Всё готово к установке";
             // 
@@ -1122,7 +1130,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(637, 361);
+            this.tabPage6.Size = new System.Drawing.Size(637, 349);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             // 
@@ -1135,7 +1143,7 @@
             this.bunifuButton11.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton11.DisabledFillColor = System.Drawing.Color.Gray;
             this.bunifuButton11.DisabledForecolor = System.Drawing.Color.White;
-            this.bunifuButton11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bunifuButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bunifuButton11.ForeColor = System.Drawing.Color.White;
             this.bunifuButton11.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton11.IconPadding = 10;
@@ -1148,13 +1156,13 @@
             this.bunifuButton11.IdleIconRightImage = null;
             this.bunifuButton11.Location = new System.Drawing.Point(242, 309);
             this.bunifuButton11.Name = "bunifuButton11";
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
-            stateProperties11.BorderRadius = 35;
-            stateProperties11.BorderThickness = 0;
-            stateProperties11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
-            stateProperties11.IconLeftImage = null;
-            stateProperties11.IconRightImage = null;
-            this.bunifuButton11.onHoverState = stateProperties11;
+            stateProperties55.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(172)))), ((int)(((byte)(99)))));
+            stateProperties55.BorderRadius = 35;
+            stateProperties55.BorderThickness = 0;
+            stateProperties55.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(171)))), ((int)(((byte)(99)))));
+            stateProperties55.IconLeftImage = null;
+            stateProperties55.IconRightImage = null;
+            this.bunifuButton11.onHoverState = stateProperties55;
             this.bunifuButton11.Size = new System.Drawing.Size(145, 35);
             this.bunifuButton11.TabIndex = 8;
             this.bunifuButton11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1216,17 +1224,17 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label27.ForeColor = System.Drawing.Color.White;
             this.label27.Location = new System.Drawing.Point(53, 186);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(256, 16);
+            this.label27.Size = new System.Drawing.Size(257, 16);
             this.label27.TabIndex = 6;
             this.label27.Text = "Запустить приложение DataStock BOT";
             // 
             // label26
             // 
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label26.ForeColor = System.Drawing.Color.White;
             this.label26.Location = new System.Drawing.Point(29, 71);
             this.label26.Name = "label26";
@@ -1237,13 +1245,66 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(27, 24);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(298, 18);
+            this.label25.Size = new System.Drawing.Size(277, 18);
             this.label25.TabIndex = 3;
             this.label25.Text = "Завершение установки DataStock BOT";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(38)))));
+            this.tabPage7.Controls.Add(this.label30);
+            this.tabPage7.Controls.Add(this.progressBar1);
+            this.tabPage7.Controls.Add(this.label29);
+            this.tabPage7.Controls.Add(this.label28);
+            this.tabPage7.Location = new System.Drawing.Point(4, 4);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(637, 361);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "tabPage7";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(27, 24);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(94, 18);
+            this.label28.TabIndex = 4;
+            this.label28.Text = "Установка...";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(50, 52);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(455, 15);
+            this.label29.TabIndex = 5;
+            this.label29.Text = "Пожалуйста, дождитесь, пока DataStock BOT установится на ваш компьютер";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(30, 180);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(571, 23);
+            this.progressBar1.TabIndex = 6;
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(27, 137);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(553, 21);
+            this.label30.TabIndex = 7;
+            this.label30.Text = "Распаковка файлов...";
             // 
             // Form1
             // 
@@ -1277,6 +1338,8 @@
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1342,6 +1405,11 @@
         private Bunifu.UI.WinForms.BunifuCheckBox bunifuCheckBox3;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

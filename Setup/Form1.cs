@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Drawing.Text;
 using NotificationManager;
 using System.ComponentModel;
+using System.Threading;
 
 namespace Setup
 {
@@ -127,55 +128,76 @@ namespace Setup
             pictureBox3.Location = new Point(pictureBox3.Location.X, pictureBox3.Location.Y - 45);
         }
 
-        private void bunifuButton10_Click(object sender, EventArgs e)
+        private void bunifuButton10_Click(object sender, EventArgs eargs)
         {
-            try
-            {
-                string link = @"Ваша ссылка на архив с программой";
-                Directory.CreateDirectory(path + @"\DataStock BOT");
-                WebClient webClient = new WebClient();
-                webClient.DownloadFileCompleted += ((object se, AsyncCompletedEventArgs ev) => {
-                    using (Ionic.Zip.ZipFile zip = Ionic.Zip.ZipFile.Read(path + @"\DataStock BOT\datastock.zip"))
-                    {
-                        foreach (ZipEntry evu in zip)
+            tabControl1.SelectedIndex++;
+            Thread thread = new Thread(() => {
+                try
+                {
+                    string link = @"Ваша ссылка на архив с программой";
+                    Directory.CreateDirectory(path + @"\DataStock BOT");
+                    WebClient webClient = new WebClient();
+                    webClient.DownloadFileCompleted += ((object se, AsyncCompletedEventArgs ev) => {
+                        using (Ionic.Zip.ZipFile zip = Ionic.Zip.ZipFile.Read(path + @"\DataStock BOT\datastock.zip"))
                         {
-                            evu.Extract(path + @"\DataStock BOT", ExtractExistingFileAction.OverwriteSilently);
+                            foreach (ZipEntry evu in zip)
+                            {
+                                evu.Extract(path + @"\DataStock BOT", ExtractExistingFileAction.OverwriteSilently);
+                            }
+                            zip.Dispose();
                         }
-                        zip.Dispose();
-                    }
-                    File.Delete(path + @"\DataStock BOT\datastock.zip");
+                        File.Delete(path + @"\DataStock BOT\datastock.zip");
 
-                    if (bunifuCheckBox1.Checked)
-                    {
-                        Type t = Type.GetTypeFromCLSID(new Guid("72C24DD5-D70A-438B-8A42-98424B88AFB8")); //Windows Script Host Shell Object
-                        dynamic shell = Activator.CreateInstance(t);
-                        try
+                        bool checked1 = false;
+                        this.BeginInvoke((MethodInvoker)delegate
                         {
-                            var lnk = shell.CreateShortcut(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + @"\DataStock BOT.lnk");
+                            checked1 = bunifuCheckBox1.Checked;
+                        });
+
+                        if (checked1)
+                        {
+                            Type t = Type.GetTypeFromCLSID(new Guid("72C24DD5-D70A-438B-8A42-98424B88AFB8")); //Windows Script Host Shell Object
+                            dynamic shell = Activator.CreateInstance(t);
                             try
                             {
-                                lnk.TargetPath = path + @"\DataStock BOT\DataStock.exe";
-                                lnk.IconLocation = path + @"\DataStock BOT\logo.ico";
-                                lnk.Save();
+                                var lnk = shell.CreateShortcut(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + @"\DataStock BOT.lnk");
+                                try
+                                {
+                                    lnk.TargetPath = path + @"\DataStock BOT\DataStock.exe";
+                                    lnk.IconLocation = path + @"\DataStock BOT\logo.ico";
+                                    lnk.Save();
+                                }
+                                finally
+                                {
+                                    Marshal.FinalReleaseComObject(lnk);
+                                }
                             }
                             finally
                             {
-                                Marshal.FinalReleaseComObject(lnk);
+                                Marshal.FinalReleaseComObject(shell);
                             }
                         }
-                        finally
-                        {
-                            Marshal.FinalReleaseComObject(shell);
-                        }
-                    }
 
-                    tabControl1.SelectedIndex++;
-                    pictureBox3.Location = new Point(pictureBox3.Location.X, pictureBox3.Location.Y + 40);
-                });
-                webClient.DownloadFileAsync(new Uri(link), path + @"\DataStock BOT\datastock.zip");
-                manager.Alert("Установка начата", NotificationType.Success);
-            }
-            catch { manager.Alert("Ошибка во время установки", NotificationType.Error); }          
+                        this.BeginInvoke((MethodInvoker)delegate {
+                            tabControl1.SelectedIndex++;
+                            pictureBox3.Location = new Point(pictureBox3.Location.X, pictureBox3.Location.Y + 40);
+                        });
+                    });
+                    webClient.DownloadProgressChanged += ((object se, DownloadProgressChangedEventArgs e) => {
+                        this.BeginInvoke((MethodInvoker)delegate {
+                            double bytesIn = double.Parse(e.BytesReceived.ToString());
+                            double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
+                            double percentage = bytesIn / totalBytes * 100;
+                            progressBar1.Value = int.Parse(Math.Truncate(percentage).ToString());
+                        });
+                    });
+
+                    webClient.DownloadFileAsync(new Uri(link), path + @"\DataStock BOT\datastock.zip");
+                    manager.Alert("Установка начата", NotificationType.Success);
+                }
+                catch { manager.Alert("Ошибка во время установки", NotificationType.Error); }
+            });
+            thread.Start();
         }
 
         private void bunifuButton11_Click(object sender, EventArgs e)
@@ -200,6 +222,11 @@ namespace Setup
                 private_fonts.AddMemoryFont(data, (int)fontStream.Length);
                 Marshal.FreeCoTaskMem(data);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
